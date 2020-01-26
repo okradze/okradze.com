@@ -1,0 +1,24 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.hero__content {
+    text-align: center;
+}
+
+.hero__heading {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.hero__paragraph {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}

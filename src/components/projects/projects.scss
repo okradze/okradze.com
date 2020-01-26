@@ -1,0 +1,15 @@
+.projects {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-auto-columns: max-content;
+
+    @media only screen and (max-width: 400px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.projects__heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}

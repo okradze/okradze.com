@@ -1,0 +1,48 @@
+@import '../../utils';
+
+.footer {
+    padding: 4rem 0;
+}
+
+.footer__right {
+    text-align: center;
+}
+
+.footer__emoji-wrapper {
+    display: inline-block;
+}
+
+.footer__emoji {
+    width: 1.5rem;
+    margin-left: 1rem;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 576px) {
+        flex-direction: column;
+
+        .footer__right {
+            order: 2;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.footer__social-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+    color: $primary;
+    font-weight: 700;
+    transition: border-bottom-color 0.15s ease-in-out;
+
+    &:hover {
+        border-bottom-color: $primary;
+    }
+}

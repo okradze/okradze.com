@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import './utils';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    color: $text;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: $text;
+}
+
+.container,
+.container-md,
+.container-xl,
+.container-sm {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.container {
+    @media only screen and (min-width: 1024px) {
+        max-width: 1024px;
+    }
+}
+
+.container-md {
+    @media only screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+}
+
+.container-sm {
+    @media only screen and (min-width: 576px) {
+        max-width: 576px;
+    }
+}
+
+.container-xl {
+    @media only screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
+.button {
+    display: inline-block;
+    background-color: $primary;
+    color: $offset;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    text-decoration: none;
+}
+
+section {
+    padding: 10rem 0;
+}

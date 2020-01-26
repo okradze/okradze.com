@@ -1,0 +1,50 @@
+@import '../../../utils';
+
+.project {
+    position: relative;
+    box-shadow: 0px 4px 10px 0 rgba($text, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+.project__content {
+    padding: 2rem 3rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.project__heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.project__links {
+    flex-shrink: 0;
+    display: flex;
+}
+
+.project__text {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+.project__tech {
+    margin: 0 -0.5rem;
+}
+.project__tech-item {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.project__link {
+    display: inline-flex;
+    align-items: center;
+}
+.project__link:nth-child(2) {
+    margin-left: 1.5rem;
+}
