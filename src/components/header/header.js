@@ -23,7 +23,7 @@ const Header = () => {
                     <ul className='nav__list'>
                         <li className='nav__item'>
                             <a
-                                onClick={() => setIsNavOpen(!isNavOpen)}
+                                onClick={() => setIsNavOpen(false)}
                                 className='nav__link'
                                 href='#home'
                             >
@@ -32,7 +32,7 @@ const Header = () => {
                         </li>
                         <li className='nav__item'>
                             <a
-                                onClick={() => setIsNavOpen(!isNavOpen)}
+                                onClick={() => setIsNavOpen(false)}
                                 className='nav__link'
                                 href='#about'
                             >
@@ -41,7 +41,7 @@ const Header = () => {
                         </li>
                         <li className='nav__item'>
                             <a
-                                onClick={() => setIsNavOpen(!isNavOpen)}
+                                onClick={() => setIsNavOpen(false)}
                                 className='nav__link'
                                 href='#projects'
                             >
