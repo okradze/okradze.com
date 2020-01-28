@@ -21,7 +21,12 @@ const Project = ({ fluid, title, paragraph, tech, github, web }) => {
                         >
                             <img src={githubSvg} alt='' />
                         </a>
-                        <a href={web} target='_blank' className='project__link'>
+                        <a
+                            rel='noopener'
+                            href={web}
+                            target='_blank'
+                            className='project__link'
+                        >
                             <img src={webOpenSvg} alt='' />
                         </a>
                     </div>
