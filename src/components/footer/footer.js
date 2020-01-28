@@ -2,7 +2,6 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import rockon from '../../images/rockon.png'
 import './footer.scss'
 
 const Footer = () => {
@@ -33,6 +32,7 @@ const Footer = () => {
 
                 <div className='footer__social'>
                     <a
+                        rel='noopener'
                         href='mailto:okradzemirian@gmail.com'
                         target='_blank'
                         className='footer__social-link'
@@ -40,6 +40,7 @@ const Footer = () => {
                         EMAIL
                     </a>
                     <a
+                        rel='noopener'
                         href='https://github.com/okradzemirian'
                         target='_blank'
                         className='footer__social-link'

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'gatsby'
 import './header.scss'
 
 const Header = () => {
@@ -7,7 +8,9 @@ const Header = () => {
     return (
         <header className={`header ${isNavOpen ? 'header--nav-open' : ''}`}>
             <div className='container-xl header__container'>
-                <h1 className='header__logo'>Okradze</h1>
+                <h1 className='header__logo'>
+                    <Link to='/'>Okradze</Link>
+                </h1>
 
                 <span
                     onClick={() => setIsNavOpen(!isNavOpen)}

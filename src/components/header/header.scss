@@ -131,6 +131,10 @@
 .header__logo {
     font-size: 2.5rem;
     font-weight: 500;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .nav__list {
