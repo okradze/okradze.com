@@ -15,14 +15,14 @@ const Project = ({ fluid, title, paragraph, tech, github, web }) => {
                     <div className='project__links'>
                         <a
                             href={github}
-                            rel='noopener'
+                            rel='noopener norefferer'
                             target='_blank'
                             className='project__link'
                         >
                             <img src={githubSvg} alt='' />
                         </a>
                         <a
-                            rel='noopener'
+                            rel='noopener norefferer'
                             href={web}
                             target='_blank'
                             className='project__link'

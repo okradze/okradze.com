@@ -32,7 +32,7 @@ const Footer = () => {
 
                 <div className='footer__social'>
                     <a
-                        rel='noopener'
+                        rel='noopener noreferrer'
                         href='mailto:okradzemirian@gmail.com'
                         target='_blank'
                         className='footer__social-link'
@@ -40,7 +40,7 @@ const Footer = () => {
                         EMAIL
                     </a>
                     <a
-                        rel='noopener'
+                        rel='noopener noreferrer'
                         href='https://github.com/okradzemirian'
                         target='_blank'
                         className='footer__social-link'
