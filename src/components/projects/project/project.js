@@ -14,8 +14,8 @@ const Project = ({ fluid, title, paragraph, tech, github, web }) => {
                     <h3>{title}</h3>
                     <div className='project__links'>
                         <a
-                            href={github}
                             rel='noopener norefferer'
+                            href={github}
                             target='_blank'
                             className='project__link'
                         >

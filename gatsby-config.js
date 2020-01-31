@@ -6,6 +6,13 @@ module.exports = {
         author: 'Mirian Okradze',
     },
     plugins: [
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: 'UA-136314426-2',
+                head: false,
+            },
+        },
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
         {
