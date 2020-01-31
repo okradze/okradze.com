@@ -6,6 +6,17 @@ module.exports = {
         author: 'Mirian Okradze',
     },
     plugins: [
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: 'UA-136314426-2',
+                head: false,
+                anonymize: true,
+                sampleRate: 5,
+                siteSpeedSampleRate: 10,
+                cookieDomain: 'okradze.netlify.com',
+            },
+        },
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
         {
