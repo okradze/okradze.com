@@ -35,16 +35,14 @@ module.exports = {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: 'Mirian Okradze',
-                short_name: 'Mirian Okradze',
+                short_name: 'Okradze',
                 start_url: '/',
                 background_color: '#6b37bf',
                 theme_color: '#fff',
-                display: 'minimal-ui',
+                display: 'standalone',
                 icon: 'src/images/logo.png',
             },
         },
-        // this (optional) plugin enables Progressive Web App + Offline functionality
-        // To learn more, visit: https://gatsby.dev/offline
-        // `gatsby-plugin-offline`,
+        `gatsby-plugin-offline`,
     ],
 }
