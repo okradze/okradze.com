@@ -4,10 +4,14 @@ import githubSvg from '../../../images/github.svg'
 import webOpenSvg from '../../../images/web-open.svg'
 import './project.scss'
 
-const Project = ({ fluid, title, paragraph, tech, github, web }) => {
+const Project = ({ image, title, body, tech, github, web }) => {
     return (
         <div className='project'>
-            <Img className='project__img' fluid={fluid} alt='Podcast Player' />
+            <Img
+                className='project__img'
+                fluid={image.fluid}
+                alt='Podcast Player'
+            />
 
             <div className='project__content'>
                 <div className='project__heading-wrapper'>
@@ -32,11 +36,13 @@ const Project = ({ fluid, title, paragraph, tech, github, web }) => {
                     </div>
                 </div>
                 <div className='project__text'>
-                    <p>{paragraph}</p>
+                    <p>{body}</p>
                 </div>
                 <ul className='project__tech'>
-                    {tech.map(item => (
-                        <li className='project__tech-item'>{item}</li>
+                    {tech.map(({ id, content }) => (
+                        <li key={id} className='project__tech-item'>
+                            {content}
+                        </li>
                     ))}
                 </ul>
             </div>

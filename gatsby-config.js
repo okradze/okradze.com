@@ -7,6 +7,13 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: `gatsby-source-contentful`,
+            options: {
+                spaceId: process.env.CONTENTFUL_SPACE_ID,
+                accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+            },
+        },
+        {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
                 trackingId: 'UA-136314426-2',
@@ -27,13 +34,13 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `gatsby-starter-default`,
-                short_name: `starter`,
-                start_url: `/`,
-                background_color: `#663399`,
-                theme_color: `#663399`,
-                display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+                name: 'Mirian Okradze',
+                short_name: 'Mirian Okradze',
+                start_url: '/',
+                background_color: '#6b37bf',
+                theme_color: '#fff',
+                display: 'minimal-ui',
+                icon: 'src/images/logo.png',
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality
