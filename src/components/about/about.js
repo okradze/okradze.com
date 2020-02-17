@@ -5,7 +5,7 @@ import './about.scss'
 
 const SKILLS = graphql`
     query {
-        allContentfulSkill(sort: { order: ASC, fields: createdAt }) {
+        allContentfulSkill(sort: { order: ASC, fields: order }) {
             edges {
                 node {
                     id
