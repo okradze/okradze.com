@@ -5,7 +5,7 @@ import './projects.scss'
 
 const PROJECTS = graphql`
     query {
-        allContentfulProject {
+        allContentfulProject(sort: { order: ASC, fields: order }) {
             edges {
                 node {
                     id
