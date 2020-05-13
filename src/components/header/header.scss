@@ -10,7 +10,7 @@
     background-color: $offset;
     box-shadow: 0 1px 4px 0 rgba($text, 0.15);
 
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: $breakpoint-md) {
         & {
             padding: 0;
         }

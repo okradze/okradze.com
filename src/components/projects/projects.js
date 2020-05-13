@@ -37,7 +37,7 @@ const Projects = () => {
 
     return (
         <section id='projects'>
-            <div className='container-md'>
+            <div className='container'>
                 <h2 className='projects__heading'>Some Projects I've Made</h2>
                 <div className='projects'>
                     {data.allContentfulProject.edges.map(({ node }) => (

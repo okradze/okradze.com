@@ -19,7 +19,7 @@ const Footer = () => {
 
     return (
         <footer className='footer'>
-            <div className='container-xl footer__container'>
+            <div className='container footer__container'>
                 <h4 className='footer__right'>
                     Designed & Developed by Mirian Okradze
                     <span className='footer__emoji-wrapper'>

@@ -1,3 +1,5 @@
+@import '../../mixins';
+
 .about__heading {
     text-align: center;
 }
@@ -8,10 +10,10 @@
 }
 
 .skills {
-    column-count: 2;
-    column-gap: 4rem;
+    column-count: 1;
 
-    @media only screen and (max-width: 576px) {
-        column-count: 1;
+    @include breakpoint-up(sm) {
+        column-count: 2;
+        column-gap: 4rem;
     }
 }

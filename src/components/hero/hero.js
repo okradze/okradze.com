@@ -2,7 +2,7 @@ import React from 'react'
 import './hero.scss'
 
 const Hero = () => (
-    <div id='home' className='hero'>
+    <section id='home' className='hero'>
         <div className='hero__content'>
             <h1 className='hero__heading'>
                 I'm <span>Mirian Okradze</span>
@@ -12,7 +12,7 @@ const Hero = () => (
                 See My Work
             </a>
         </div>
-    </div>
+    </section>
 )
 
 export default Hero

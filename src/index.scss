@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 @import './utils';
+@import './container';
 
 *,
 *::before,
@@ -28,41 +29,6 @@ body {
 
 a {
     color: $text;
-}
-
-.container,
-.container-md,
-.container-xl,
-.container-sm {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-.container {
-    @media only screen and (min-width: 1024px) {
-        max-width: 1024px;
-    }
-}
-
-.container-md {
-    @media only screen and (min-width: 768px) {
-        max-width: 768px;
-    }
-}
-
-.container-sm {
-    @media only screen and (min-width: 576px) {
-        max-width: 576px;
-    }
-}
-
-.container-xl {
-    @media only screen and (min-width: 1200px) {
-        max-width: 1200px;
-    }
 }
 
 .button {

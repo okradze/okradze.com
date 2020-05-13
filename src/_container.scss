@@ -1,0 +1,62 @@
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media only screen and (min-width: $breakpoint-sm) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media only screen and (min-width: $breakpoint-md) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media only screen and (min-width: $breakpoint-lg) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media only screen and (min-width: $breakpoint-xl) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media only screen and (min-width: $breakpoint-sm) {
+    .container,
+    .container-sm {
+        max-width: 540px;
+    }
+}
+@media only screen and (min-width: $breakpoint-md) {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px;
+    }
+}
+@media only screen and (min-width: $breakpoint-lg) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px;
+    }
+}
+@media only screen and (min-width: $breakpoint-xl) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px;
+    }
+}

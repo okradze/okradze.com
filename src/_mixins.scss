@@ -1,0 +1,24 @@
+@import './utils';
+
+@mixin breakpoint-up($bp) {
+    @if $bp == sm {
+        @media only screen and (min-width: $breakpoint-sm) {
+            @content;
+        }
+    }
+    @if $bp == md {
+        @media only screen and (min-width: $breakpoint-md) {
+            @content;
+        }
+    }
+    @if $bp == lg {
+        @media only screen and (min-width: $breakpoint-lg) {
+            @content;
+        }
+    }
+    @if $bp == xl {
+        @media only screen and (min-width: $breakpoint-xl) {
+            @content;
+        }
+    }
+}
