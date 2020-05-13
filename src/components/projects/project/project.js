@@ -18,20 +18,20 @@ const Project = ({ image, title, body, tech, github, web }) => {
                     <h3>{title}</h3>
                     <div className='project__links'>
                         <a
-                            rel='noopener norefferer'
+                            rel='noopener noreferrer'
                             href={github}
                             target='_blank'
                             className='project__link'
                         >
-                            <img src={githubSvg} alt='' />
+                            <img src={githubSvg} alt='GitHub Link' />
                         </a>
                         <a
-                            rel='noopener norefferer'
+                            rel='noopener noreferrer'
                             href={web}
                             target='_blank'
                             className='project__link'
                         >
-                            <img src={webOpenSvg} alt='' />
+                            <img src={webOpenSvg} alt='Website' />
                         </a>
                     </div>
                 </div>

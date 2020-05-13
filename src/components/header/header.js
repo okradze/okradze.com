@@ -10,10 +10,12 @@ const Header = () => {
         <header className={`header ${isNavOpen ? 'header--nav-open' : ''}`}>
             <div className='container-xl header__container'>
                 <Link className='header__logo' to='/'>
-                    <img src={logo} alt='Okradze' />
+                    <img src={logo} alt='Logo' />
                 </Link>
 
                 <span
+                    role='button'
+                    tabIndex={0}
                     onClick={() => setIsNavOpen(!isNavOpen)}
                     className='nav-toggle-container'
                 >
