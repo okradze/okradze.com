@@ -6,6 +6,10 @@
     display: flex;
     flex-direction: column;
 }
+
+.project__img {
+    max-width: 100%;
+}
 .project__content {
     padding: 2rem 3rem;
     flex-grow: 1;

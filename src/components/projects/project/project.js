@@ -7,11 +7,7 @@ import './project.scss'
 const Project = ({ image, title, body, tech, github, web }) => {
     return (
         <div className='project'>
-            <Img
-                className='project__img'
-                fluid={image.fluid}
-                alt='Podcast Player'
-            />
+            <Img className='project__img' fluid={image.fluid} alt={title} />
 
             <div className='project__content'>
                 <div className='project__heading-wrapper'>
