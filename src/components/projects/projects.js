@@ -5,25 +5,25 @@ import './projects.scss'
 
 const PROJECTS = graphql`
     query {
-        allContentfulProject(sort: { order: ASC, fields: order }) {
+        allMarkdownRemark(
+            sort: { order: ASC, fields: frontmatter___order }
+            filter: { fileAbsolutePath: { regex: "/projects/[^/]*.md$/" } }
+        ) {
             edges {
                 node {
                     id
-                    title
-                    body
-                    web
-                    github
-                    tech {
-                        id
-                        content
-                    }
-                    image {
-                        fluid {
-                            src
-                            base64
-                            sizes
-                            srcSet
-                            aspectRatio
+                    frontmatter {
+                        github
+                        body
+                        title
+                        web
+                        tech
+                        image {
+                            childImageSharp {
+                                fluid(quality: 100, maxWidth: 600) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
                         }
                     }
                 }
@@ -40,9 +40,11 @@ const Projects = () => {
             <div className='container'>
                 <h2 className='projects__heading'>Some Projects I've Made</h2>
                 <div className='projects'>
-                    {data.allContentfulProject.edges.map(({ node }) => (
-                        <Project key={node.id} {...node} />
-                    ))}
+                    {data.allMarkdownRemark.edges.map(
+                        ({ node: { frontmatter, id } }) => (
+                            <Project key={id} {...frontmatter} />
+                        ),
+                    )}
                 </div>
             </div>
         </section>

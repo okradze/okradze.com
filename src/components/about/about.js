@@ -5,12 +5,23 @@ import './about.scss'
 
 const SKILLS = graphql`
     query {
-        allContentfulSkill(sort: { order: ASC, fields: order }) {
+        allMarkdownRemark(
+            sort: { order: ASC, fields: frontmatter___order }
+            filter: { fileAbsolutePath: { regex: "/skills/[^/]*.md$/" } }
+        ) {
             edges {
                 node {
+                    frontmatter {
+                        title
+                        percentage
+                        order
+                    }
+                    html
                     id
-                    title
-                    percentage
+                    fileAbsolutePath
+                    children {
+                        id
+                    }
                 }
             }
         }
@@ -32,9 +43,11 @@ const About = () => {
                 </p>
 
                 <div className='skills'>
-                    {data.allContentfulSkill.edges.map(({ node }) => (
-                        <Skill key={node.id} {...node} />
-                    ))}
+                    {data.allMarkdownRemark.edges.map(
+                        ({ node: { frontmatter, id } }) => (
+                            <Skill key={id} {...frontmatter} />
+                        ),
+                    )}
                 </div>
             </div>
         </section>

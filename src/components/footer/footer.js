@@ -7,7 +7,7 @@ import './footer.scss'
 const Footer = () => {
     const data = useStaticQuery(graphql`
         query {
-            image1: file(relativePath: { eq: "rockon.png" }) {
+            image1: file(relativePath: { eq: "images/rockon.png" }) {
                 childImageSharp {
                     fluid {
                         ...GatsbyImageSharpFluid

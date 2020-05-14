@@ -7,13 +7,6 @@ module.exports = {
     },
     plugins: [
         {
-            resolve: `gatsby-source-contentful`,
-            options: {
-                spaceId: process.env.CONTENTFUL_SPACE_ID,
-                accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-            },
-        },
-        {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
                 trackingId: 'UA-136314426-2',
@@ -25,11 +18,12 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                name: `images`,
-                path: `${__dirname}/src/images`,
+                name: `src`,
+                path: `${__dirname}/src`,
             },
         },
         `gatsby-transformer-sharp`,
+        `gatsby-transformer-remark`,
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
