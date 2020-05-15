@@ -20,8 +20,8 @@ const PROJECTS = graphql`
                         tech
                         image {
                             childImageSharp {
-                                fluid(quality: 100, maxWidth: 600) {
-                                    ...GatsbyImageSharpFluid
+                                fluid(quality: 100, maxWidth: 350) {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
