@@ -7,6 +7,17 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: 'gatsby-plugin-prefetch-google-fonts',
+            options: {
+                fonts: [
+                    {
+                        family: `Lato`,
+                        variants: [`400`, `700`],
+                    },
+                ],
+            },
+        },
+        {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
                 trackingId: 'UA-136314426-2',
