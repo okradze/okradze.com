@@ -40,15 +40,6 @@ const Header = () => {
                             <a
                                 onClick={() => setIsNavOpen(false)}
                                 className='nav__link'
-                                href='#about'
-                            >
-                                About Me
-                            </a>
-                        </li>
-                        <li className='nav__item'>
-                            <a
-                                onClick={() => setIsNavOpen(false)}
-                                className='nav__link'
                                 href='#projects'
                             >
                                 Projects
