@@ -12,21 +12,27 @@
     margin: 0 1rem;
 }
 
+$grey: #777;
+$green: #bae67e;
+$white: #fff;
+
 .react-toggle-track {
-    background-color: #777;
+    background-color: $grey;
+}
+
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background-color: $grey;
+}
+
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background-color: $green;
 }
 
 .react-toggle--checked {
-    &:hover {
-        .react-toggle-track {
-            background-color: #bae67e;
-        }
-    }
-
     .react-toggle-track {
-        background-color: #bae67e;
+        background-color: $green;
     }
     .react-toggle-thumb {
-        border-color: #fff;
+        border-color: $white;
     }
 }
