@@ -48,11 +48,11 @@
     margin: 0 1.5rem;
     border-bottom: 2px solid transparent;
     padding-bottom: 2px;
-    color: $primary;
+    color: var(--primary);
     font-weight: 700;
     transition: border-bottom-color 0.15s ease-in-out;
 
     &:hover {
-        border-bottom-color: $primary;
+        border-bottom-color: var(--primary);
     }
 }

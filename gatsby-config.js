@@ -6,6 +6,15 @@ module.exports = {
         author: 'Mirian Okradze',
     },
     plugins: [
+        `gatsby-plugin-dark-mode`,
+        {
+            resolve: 'gatsby-plugin-react-svg',
+            options: {
+                rule: {
+                    include: /images/,
+                },
+            },
+        },
         {
             resolve: 'gatsby-plugin-prefetch-google-fonts',
             options: {

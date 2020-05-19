@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import githubSvg from '../../../images/github.svg'
-import webOpenSvg from '../../../images/web-open.svg'
+import GithubIcon from '../../../images/github.svg'
+import WebOpenIcon from '../../../images/web-open.svg'
 import './project.scss'
 
 const Project = ({ image, title, body, tech, github, web }) => (
@@ -22,7 +22,8 @@ const Project = ({ image, title, body, tech, github, web }) => (
                         target='_blank'
                         className='project__link'
                     >
-                        <img src={githubSvg} alt='GitHub Link' />
+                        {/* <img src={githubSvg} alt='GitHub Link' /> */}
+                        <GithubIcon className='project__icon' />
                     </a>
                     <a
                         rel='noopener noreferrer'
@@ -30,7 +31,8 @@ const Project = ({ image, title, body, tech, github, web }) => (
                         target='_blank'
                         className='project__link'
                     >
-                        <img src={webOpenSvg} alt='Website' />
+                        <WebOpenIcon className='project__icon' />
+                        {/* <img src={webOpenSvg} alt='Website' /> */}
                     </a>
                 </div>
             </div>

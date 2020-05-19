@@ -17,10 +17,24 @@ html {
     scroll-behavior: smooth;
 }
 
+body.dark {
+    --primary: #238cfc;
+    --text: #e6e6e6;
+    --bg: #24272c;
+    --bg-secondary: #2c2f35;
+    --shadow: 0;
+}
+
 body {
+    --primary: #037bfa;
+    --text: #444452;
+    --bg: #fff;
+    --bg-secondary: #fff;
+    --shadow: 34, 34, 34;
+    --white: #fff;
+
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    color: $text;
     font-size: 1.6rem;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -28,13 +42,13 @@ body {
 }
 
 a {
-    color: $text;
+    color: var(--text);
 }
 
 .button {
     display: inline-block;
-    background-color: $primary;
-    color: $offset;
+    background-color: var(--primary);
+    color: var(--white);
     border-radius: 5px;
     padding: 1rem 3rem;
     text-decoration: none;
