@@ -1,11 +1,13 @@
+@import '../../mixins';
+
 .hero {
     display: flex;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 .hero__content {
-    text-align: center;
+    text-align: left;
+    max-width: 70rem;
 
     .button {
         font-weight: 700;
@@ -13,9 +15,13 @@
 }
 
 .hero__heading {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-weight: 400;
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+
+    @include breakpoint-up(sm) {
+        font-size: 4rem;
+    }
 
     span {
         font-weight: 700;

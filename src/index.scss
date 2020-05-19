@@ -18,10 +18,11 @@ html {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
     color: $text;
     font-size: 1.6rem;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -37,6 +38,7 @@ a {
     border-radius: 5px;
     padding: 1rem 3rem;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 section {

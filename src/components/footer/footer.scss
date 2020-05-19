@@ -34,6 +34,7 @@
 .footer__right {
     order: 2;
     margin-top: 2rem;
+    font-size: 1.5rem;
 
     @include breakpoint-up(sm) {
         order: 0;
