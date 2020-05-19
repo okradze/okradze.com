@@ -1,0 +1,32 @@
+.switch {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.switch__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 1rem;
+}
+
+.react-toggle-track {
+    background-color: #777;
+}
+
+.react-toggle--checked {
+    &:hover {
+        .react-toggle-track {
+            background-color: #bae67e;
+        }
+    }
+
+    .react-toggle-track {
+        background-color: #bae67e;
+    }
+    .react-toggle-thumb {
+        border-color: #fff;
+    }
+}
