@@ -15,11 +15,15 @@
 }
 
 .hero__heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 300;
     margin-bottom: 4rem;
 
     @include breakpoint-up(sm) {
+        font-size: 3.5rem;
+    }
+
+    @include breakpoint-up(lg) {
         font-size: 4rem;
     }
 
