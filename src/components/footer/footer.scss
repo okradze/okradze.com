@@ -51,6 +51,7 @@
     color: var(--primary);
     font-weight: 700;
     transition: border-bottom-color 0.15s ease-in-out;
+    cursor: pointer;
 
     &:hover {
         border-bottom-color: var(--primary);
