@@ -6,6 +6,7 @@ module.exports = {
         author: 'Mirian Okradze',
     },
     plugins: [
+        `gatsby-plugin-remove-serviceworker`,
         `gatsby-plugin-dark-mode`,
         {
             resolve: 'gatsby-plugin-react-svg',
