@@ -21,8 +21,8 @@ const Project = ({ image, title, body, tech, github, web }) => (
                         href={github}
                         target='_blank'
                         className='project__link'
+                        aria-label='GitHub'
                     >
-                        {/* <img src={githubSvg} alt='GitHub Link' /> */}
                         <GithubIcon className='project__icon' />
                     </a>
                     <a
@@ -30,9 +30,9 @@ const Project = ({ image, title, body, tech, github, web }) => (
                         href={web}
                         target='_blank'
                         className='project__link'
+                        aria-label='Visit Website'
                     >
                         <WebOpenIcon className='project__icon' />
-                        {/* <img src={webOpenSvg} alt='Website' /> */}
                     </a>
                 </div>
             </div>
