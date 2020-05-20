@@ -29,28 +29,34 @@ const Switch = () => {
 
     return (
         <ThemeToggler>
-            {({ theme, toggleTheme }) => (
-                <div className='switch'>
-                    <Img
-                        className='switch__icon'
-                        fluid={data.sun.childImageSharp.fluid}
-                        alt='Sun'
-                    />
-                    <Toggle
-                        checked={theme === 'dark'}
-                        onChange={e =>
-                            toggleTheme(e.target.checked ? 'dark' : 'light')
-                        }
-                        icons={false}
-                        aria-label='Toggle dark mode'
-                    />
-                    <Img
-                        className='switch__icon'
-                        fluid={data.moon.childImageSharp.fluid}
-                        alt='Moon'
-                    />
-                </div>
-            )}
+            {({ theme, toggleTheme }) => {
+                if (theme === null) {
+                    return null
+                }
+
+                return (
+                    <div className='switch'>
+                        <Img
+                            className='switch__icon'
+                            fluid={data.sun.childImageSharp.fluid}
+                            alt='Sun'
+                        />
+                        <Toggle
+                            checked={theme === 'dark'}
+                            onChange={e =>
+                                toggleTheme(e.target.checked ? 'dark' : 'light')
+                            }
+                            icons={false}
+                            aria-label='Toggle dark mode'
+                        />
+                        <Img
+                            className='switch__icon'
+                            fluid={data.moon.childImageSharp.fluid}
+                            alt='Moon'
+                        />
+                    </div>
+                )
+            }}
         </ThemeToggler>
     )
 }
