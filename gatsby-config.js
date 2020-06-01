@@ -2,7 +2,7 @@ module.exports = {
     siteMetadata: {
         title: 'Mirian Okradze | A Full-Stack Web Developer',
         description:
-            'Mirian Okradze is a full-stack web developer based in Tbilisi, Georgia, who enjoys building modern and performant web apps',
+            "I'm Mirian Okradze, a full-stack web developer, focused on building performant web apps",
         author: 'Mirian Okradze',
     },
     plugins: [
