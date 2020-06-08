@@ -41,7 +41,7 @@ const Footer = () => {
                     </a>
                     <a
                         rel='noopener noreferrer'
-                        href='https://github.com/okradzemirian'
+                        href='https://github.com/okradze'
                         target='_blank'
                         className='footer__social-link'
                     >
