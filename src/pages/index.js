@@ -5,11 +5,11 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const IndexPage = () => (
-    <Layout>
-        <SEO title='Home' />
-        <Hero />
-        <Projects />
-    </Layout>
+  <Layout>
+    <SEO title="Home" />
+    <Hero />
+    <Projects />
+  </Layout>
 )
 
 export default IndexPage
