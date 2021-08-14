@@ -6,7 +6,7 @@ const Hero = () => (
     <div className="container">
       <div className="hero__content">
         <h1 className="hero__heading">
-          I'm <span>Mirian Okradze</span>, a full-stack web developer, focused
+          I'm <span>Mirian Okradze</span>, a software developer, focused
           on building performant web apps
         </h1>
         <a className="button" href="#projects">

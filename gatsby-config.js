@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Mirian Okradze | A Full-Stack Web Developer',
+    title: 'Mirian Okradze | A Software Developer',
     description:
-      "I'm Mirian Okradze, a full-stack web developer, focused on building performant web apps",
+      "I'm Mirian Okradze, a software developer, focused on building performant web apps",
     author: 'Mirian Okradze',
   },
   plugins: [
