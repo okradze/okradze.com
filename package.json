@@ -4,9 +4,6 @@
   "description": "Mirian Okradze | Portfolio",
   "version": "0.1.0",
   "author": "Mirian Okradze <okradzemirian@gmail.com>",
-  "engines": {
-    "node": "12.x.x"
-  },
   "dependencies": {
     "@fontsource/open-sans": "^4.5.0",
     "gatsby": "^3.11.1",
