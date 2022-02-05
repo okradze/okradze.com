@@ -1,15 +1,15 @@
 .switch {
-    position: absolute;
-    top: 4rem;
-    right: 2rem;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .switch__icon {
-    width: 1.8rem;
-    height: 1.8rem;
-    margin: 0 1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0 1rem;
 }
 
 $grey: #777;
@@ -17,22 +17,22 @@ $green: #bae67e;
 $white: #fff;
 
 .react-toggle-track {
-    background-color: $grey;
+  background-color: $grey;
 }
 
 .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
-    background-color: $grey;
+  background-color: $grey;
 }
 
 .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
-    background-color: $green;
+  background-color: $green;
 }
 
 .react-toggle--checked {
-    .react-toggle-track {
-        background-color: $green;
-    }
-    .react-toggle-thumb {
-        border-color: $white;
-    }
+  .react-toggle-track {
+    background-color: $green;
+  }
+  .react-toggle-thumb {
+    border-color: $white;
+  }
 }

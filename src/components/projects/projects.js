@@ -1,47 +1,49 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 import Project from './project/project'
-import './projects.scss'
+import podcastPlayerImg from '../../images/podcast-player.png'
+import styles from './projects.module.scss'
 
-const PROJECTS = graphql`
-  query {
-    allMarkdownRemark(
-      sort: { order: ASC, fields: frontmatter___order }
-      filter: { fileAbsolutePath: { regex: "/projects/[^/]*.md$/" } }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            github
-            body
-            title
-            web
-            tech
-            image {
-              childImageSharp {
-                fluid(quality: 100, maxWidth: 350) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
+const PROJECTS = [
+  {
+    title: 'Podcast Player',
+    body:
+      'A web app for listening to podcasts. View the top podcasts, discover new podcasts, get detailed information and recommendations.',
+    web: 'https://podcasts.okradze.com',
+    github: 'https://github.com/okradze/podcast-player',
+    tech: [
+      'React',
+      'Redux',
+      'ListenNotes API',
+      'Jest',
+      'React Testing Library',
+    ],
+    image: podcastPlayerImg,
+  },
+  {
+    title: 'Podcast Player',
+    body:
+      'A web app for listening to podcasts. View the top podcasts, discover new podcasts, get detailed information and recommendations.',
+    web: 'https://podcasts.okradze.com',
+    github: 'https://github.com/okradze/podcast-player',
+    tech: [
+      'React',
+      'Redux',
+      'ListenNotes API',
+      'Jest',
+      'React Testing Library',
+    ],
+    image: podcastPlayerImg,
+  },
+]
 
 const Projects = () => {
-  const data = useStaticQuery(PROJECTS)
-
   return (
-    <section id="projects">
-      <div className="container">
-        <h2 className="projects__heading">Some Projects I've Made</h2>
-        <div className="projects">
-          {data.allMarkdownRemark.edges.map(({ node: { frontmatter, id } }) => (
-            <Project key={id} {...frontmatter} />
+    <section id='projects'>
+      <div className='container'>
+        <h2 className={styles.heading}>Some Projects I've Made</h2>
+        <div className={styles.projects}>
+          {PROJECTS.map(project => (
+            <Project key={project.title} {...project} />
           ))}
         </div>
       </div>

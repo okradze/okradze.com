@@ -1,56 +1,42 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import Image from 'next/image'
+import styles from './footer.module.scss'
+import rockonEmoji from '../../images/rockon.png'
 
-import './footer.scss'
+const Footer = () => (
+  <footer className={styles.footer}>
+    <div className={`container ${styles.footerContainer}`}>
+      <h4 className={styles.footerLeft}>
+        Designed & Developed by Mirian Okradze
+        <span className={styles.emojiWrapper}>
+          <Image
+            src={rockonEmoji}
+            className={styles.emoji}
+            alt='Rock On Emoji'
+            layout='responsive'
+          />
+        </span>
+      </h4>
 
-const Footer = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      image1: file(relativePath: { eq: "images/rockon.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
-  return (
-    <footer className="footer">
-      <div className="container footer__container">
-        <h4 className="footer__right">
-          Designed & Developed by Mirian Okradze
-          <span className="footer__emoji-wrapper">
-            <Img
-              className="footer__emoji"
-              fluid={data.image1.childImageSharp.fluid}
-            />
-          </span>
-        </h4>
-
-        <div className="footer__social">
-          <a
-            rel="noopener noreferrer"
-            href="mailto:okradzemirian@gmail.com"
-            target="_blank"
-            className="footer__social-link"
-          >
-            EMAIL
-          </a>
-          <a
-            rel="noopener noreferrer"
-            href="https://github.com/okradze"
-            target="_blank"
-            className="footer__social-link"
-          >
-            GITHUB
-          </a>
-        </div>
+      <div>
+        <a
+          rel='noopener noreferrer'
+          href='mailto:okradzemirian@gmail.com'
+          target='_blank'
+          className={styles.link}
+        >
+          EMAIL
+        </a>
+        <a
+          rel='noopener noreferrer'
+          href='https://github.com/okradze'
+          target='_blank'
+          className={styles.link}
+        >
+          GITHUB
+        </a>
       </div>
-    </footer>
-  )
-}
+    </div>
+  </footer>
+)
 
 export default Footer

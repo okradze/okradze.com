@@ -1,15 +1,15 @@
 import React from 'react'
-import './hero.scss'
+import styles from './hero.module.scss'
 
 const Hero = () => (
-  <section id="home" className="hero">
+  <section id="home" className={styles.hero}>
     <div className="container">
-      <div className="hero__content">
-        <h1 className="hero__heading">
-          I'm <span>Mirian Okradze</span>, a software developer, focused
-          on building performant web apps
+      <div className={styles.heroContent}>
+        <h1 className={styles.heroHeading}>
+          I'm <span>Mirian Okradze</span>, a software developer, focused on
+          building performant web apps
         </h1>
-        <a className="button" href="#projects">
+        <a className={styles.button} href="#projects">
           See My Work
         </a>
       </div>
