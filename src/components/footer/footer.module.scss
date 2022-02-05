@@ -30,12 +30,10 @@
   }
 }
 
-.emojiWrapper {
-  display: inline-block;
-}
-
 .emoji {
-  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 1rem;
 }
 

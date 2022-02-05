@@ -1,18 +1,18 @@
 import Image from 'next/image'
 import styles from './footer.module.scss'
-import rockonEmoji from '../../images/rockon.png'
+import rockonEmoji from '../../../public/rockon.png'
 
 const Footer = () => (
   <footer className={styles.footer}>
     <div className={`container ${styles.footerContainer}`}>
       <h4 className={styles.footerLeft}>
         Designed & Developed by Mirian Okradze
-        <span className={styles.emojiWrapper}>
+        <span className={styles.emoji}>
           <Image
             src={rockonEmoji}
-            className={styles.emoji}
             alt='Rock On Emoji'
-            layout='responsive'
+            width={15}
+            height={22.5}
           />
         </span>
       </h4>

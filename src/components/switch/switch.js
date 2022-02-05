@@ -1,61 +1,33 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import Image from 'next/image'
 import Toggle from 'react-toggle'
-import Img from 'gatsby-image'
-
-import 'react-toggle/style.css'
-import './switch.scss'
+import sunImg from '../../../public/sun.png'
+import moonImg from '../../../public/moon.png'
+import styles from './switch.module.scss'
+// import 'react-toggle/style.css'
 
 const Switch = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      sun: file(relativePath: { eq: "images/sun.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      moon: file(relativePath: { eq: "images/moon.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   return (
-    <ThemeToggler>
-      {({ theme, toggleTheme }) => {
-        if (theme === null) {
-          return null
-        }
+    <div>Hello</div>
+    // <ThemeToggler>
+    //   {({ theme, toggleTheme }) => {
+    //     if (theme === null) {
+    //       return null
+    //     }
 
-        return (
-          <div className="switch">
-            <Img
-              className="switch__icon"
-              fluid={data.sun.childImageSharp.fluid}
-              alt="Sun"
-            />
-            <Toggle
-              checked={theme === 'dark'}
-              onChange={(e) => toggleTheme(e.target.checked ? 'dark' : 'light')}
-              icons={false}
-              aria-label="Toggle dark mode"
-            />
-            <Img
-              className="switch__icon"
-              fluid={data.moon.childImageSharp.fluid}
-              alt="Moon"
-            />
-          </div>
-        )
-      }}
-    </ThemeToggler>
+    //     return (
+    //       <div className={styles.switch}>
+    //         <Image className={styles.icon} src={sunImg} alt='Sun' />
+    //         <Toggle
+    //           checked={theme === 'dark'}
+    //           onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+    //           icons={false}
+    //           aria-label='Toggle dark mode'
+    //         />
+    //         <Image className={styles.icon} src={moonImg} alt='Moon' />
+    //       </div>
+    //     )
+    //   }}
+    // </ThemeToggler>
   )
 }
 

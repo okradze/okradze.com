@@ -1,9 +1,5 @@
 import Switch from './switch/switch'
 import Footer from './footer/footer'
-import '@fontsource/open-sans/300.css'
-import '@fontsource/open-sans/400.css'
-import '@fontsource/open-sans/700.css'
-import '../index.scss'
 
 const Layout = ({ children }) => (
   <div

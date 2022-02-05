@@ -1,6 +1,8 @@
 import React from 'react'
 import Project from './project/project'
-import podcastPlayerImg from '../../images/podcast-player.png'
+import podcastPlayerImg from '../../../public/podcast-player.png'
+import colorGeneratorImg from '../../../public/color-generator.png'
+import countriesImg from '../../../public/countries.png'
 import styles from './projects.module.scss'
 
 const PROJECTS = [
@@ -20,35 +22,34 @@ const PROJECTS = [
     image: podcastPlayerImg,
   },
   {
-    title: 'Podcast Player',
-    body:
-      'A web app for listening to podcasts. View the top podcasts, discover new podcasts, get detailed information and recommendations.',
-    web: 'https://podcasts.okradze.com',
-    github: 'https://github.com/okradze/podcast-player',
-    tech: [
-      'React',
-      'Redux',
-      'ListenNotes API',
-      'Jest',
-      'React Testing Library',
-    ],
-    image: podcastPlayerImg,
+    title: 'Color Generator',
+    body: 'A web app to generate the colors.',
+    web: 'https://colors.okradze.com',
+    github: 'https://github.com/okradze/color-generator',
+    tech: ['React', 'Framer Motion'],
+    image: colorGeneratorImg,
+  },
+  {
+    title: 'REST Countries',
+    body: 'Get detailed information about countries. Enjoy dark mode.',
+    web: 'https://okradze-countries.netlify.app',
+    github: 'https://github.com/okradze/countries',
+    tech: ['React', 'Redux', 'REST Countries API'],
+    image: countriesImg,
   },
 ]
 
-const Projects = () => {
-  return (
-    <section id='projects'>
-      <div className='container'>
-        <h2 className={styles.heading}>Some Projects I've Made</h2>
-        <div className={styles.projects}>
-          {PROJECTS.map(project => (
-            <Project key={project.title} {...project} />
-          ))}
-        </div>
+const Projects = () => (
+  <section id='projects'>
+    <div className='container'>
+      <h2 className={styles.heading}>Some Projects I've Made</h2>
+      <div className={styles.projects}>
+        {PROJECTS.map(project => (
+          <Project key={project.title} {...project} />
+        ))}
       </div>
-    </section>
-  )
-}
+    </div>
+  </section>
+)
 
 export default Projects
