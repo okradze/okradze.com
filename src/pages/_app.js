@@ -1,14 +1,18 @@
-import Layout from '../components/layout'
-import '@fontsource/open-sans/300.css'
-import '@fontsource/open-sans/400.css'
-import '@fontsource/open-sans/700.css'
+import Layout from '../components/layout/layout'
+import ThemeProvider from '../providers/ThemeProvider'
 import '../index.scss'
+import Head from 'next/head'
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider>
+      <Head>
+        <title>Mirian Okradze | A Software Developer</title>
+      </Head>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
   )
 }
 

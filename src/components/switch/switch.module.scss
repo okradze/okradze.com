@@ -6,33 +6,6 @@
   align-items: center;
 }
 
-.icon {
-  width: 1.8rem;
-  height: 1.8rem;
+.button {
   margin: 0 1rem;
-}
-
-$grey: #777;
-$green: #bae67e;
-$white: #fff;
-
-.react-toggle-track {
-  background-color: $grey;
-}
-
-.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
-  background-color: $grey;
-}
-
-.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
-  background-color: $green;
-}
-
-.react-toggle--checked {
-  .react-toggle-track {
-    background-color: $green;
-  }
-  .react-toggle-thumb {
-    border-color: $white;
-  }
 }

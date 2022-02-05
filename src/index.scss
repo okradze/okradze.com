@@ -4,59 +4,89 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
-body.dark {
-    --primary: #238cfc;
-    --text: #e6e6e6;
-    --bg: #24272c;
-    --bg-secondary: #2c2f35;
-    --shadow: 0;
+main {
+  --white: #fff;
+}
+
+main.dark {
+  --primary: #238cfc;
+  --text: #e6e6e6;
+  --bg: #24272c;
+  --bg-secondary: #2c2f35;
+  --shadow: 0;
+}
+
+main.light {
+  --primary: #037bfa;
+  --text: #444452;
+  --bg: #fff;
+  --bg-secondary: #fff;
+  --shadow: 34, 34, 34;
 }
 
 body {
-    --primary: #037bfa;
-    --text: #444452;
-    --bg: #fff;
-    --bg-secondary: #fff;
-    --shadow: 34, 34, 34;
-    --white: #fff;
-
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    font-size: 1.6rem;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-    color: var(--text);
+  color: var(--text);
 }
 
 section {
-    padding: 10rem 0;
+  padding: 10rem 0;
 }
 
 .not-found {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-    h1 {
-        margin-bottom: 1rem;
-    }
+  h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+$grey: #777;
+$green: #bae67e;
+$white: #fff;
+
+.react-toggle-track {
+  background-color: $grey;
+}
+
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: $grey;
+}
+
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: $green;
+}
+
+.react-toggle--checked {
+  .react-toggle-track {
+    background-color: $green;
+  }
+  .react-toggle-thumb {
+    border-color: $white;
+  }
 }
