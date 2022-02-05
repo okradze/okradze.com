@@ -6,6 +6,8 @@ import 'react-toggle/style.css'
 const Switch = () => {
   const { theme, setTheme } = useTheme()
 
+  if (!theme) return null
+
   return (
     <div className={styles.switch}>
       <img width={18} height={18} src='/sun.png' alt='Sun' />
