@@ -1,11 +1,10 @@
-import { useContext } from 'react'
+import { useTheme } from 'next-themes'
 import Toggle from 'react-toggle'
-import { ThemeContext } from '../../providers/ThemeProvider'
 import styles from './switch.module.scss'
 import 'react-toggle/style.css'
 
 const Switch = () => {
-  const { theme, changeTheme } = useContext(ThemeContext)
+  const { theme, setTheme } = useTheme()
 
   return (
     <div className={styles.switch}>
@@ -13,7 +12,7 @@ const Switch = () => {
       <Toggle
         className={styles.button}
         checked={theme === 'dark'}
-        onChange={e => changeTheme(e.target.checked ? 'dark' : 'light')}
+        onChange={e => setTheme(e.target.checked ? 'dark' : 'light')}
         icons={false}
         aria-label='Toggle dark mode'
       />

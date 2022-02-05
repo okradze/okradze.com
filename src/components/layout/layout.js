@@ -1,14 +1,10 @@
 import Switch from '../switch/switch'
 import Footer from '../footer/footer'
-import { useContext } from 'react'
-import { ThemeContext } from '../../providers/ThemeProvider'
 import styles from './layout.module.scss'
 
 const Layout = ({ children }) => {
-  const { theme } = useContext(ThemeContext)
-
   return (
-    <main className={`${styles.main} ${theme}`}>
+    <main className={styles.main}>
       <Switch />
       {children}
       <Footer />
