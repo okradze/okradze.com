@@ -1,8 +1,5 @@
 import React from 'react'
 import Project from './project/project'
-import podcastPlayerImg from '../../../public/podcast-player.png'
-import colorGeneratorImg from '../../../public/color-generator.png'
-import countriesImg from '../../../public/countries.png'
 import styles from './projects.module.scss'
 
 const PROJECTS = [
@@ -19,7 +16,7 @@ const PROJECTS = [
       'Jest',
       'React Testing Library',
     ],
-    image: podcastPlayerImg,
+    image: '/podcast-player.png',
   },
   {
     title: 'Color Generator',
@@ -27,7 +24,7 @@ const PROJECTS = [
     web: 'https://colors.okradze.com',
     github: 'https://github.com/okradze/color-generator',
     tech: ['React', 'Framer Motion'],
-    image: colorGeneratorImg,
+    image: '/color-generator.png',
   },
   {
     title: 'REST Countries',
@@ -35,7 +32,7 @@ const PROJECTS = [
     web: 'https://okradze-countries.netlify.app',
     github: 'https://github.com/okradze/countries',
     tech: ['React', 'Redux', 'REST Countries API'],
-    image: countriesImg,
+    image: '/countries.png',
   },
 ]
 

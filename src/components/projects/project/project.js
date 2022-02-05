@@ -1,11 +1,10 @@
-import Image from 'next/image'
 import GithubIcon from '../../../svg/GithubIcon'
 import WebOpenIcon from '../../../svg/WebOpenIcon'
 import styles from './project.module.scss'
 
 const Project = ({ image, title, body, tech, github, web }) => (
   <div className={styles.project}>
-    <Image className={styles.img} src={image} alt={title} />
+    <img className={styles.img} src={image} alt={title} />
 
     <div className={styles.content}>
       <div className={styles.headingWrapper}>
