@@ -1,4 +1,5 @@
 import { useTheme } from 'next-themes'
+import Image from 'next/image'
 import Toggle from 'react-toggle'
 import styles from './switch.module.scss'
 import 'react-toggle/style.css'
@@ -10,7 +11,7 @@ const Switch = () => {
 
   return (
     <div className={styles.switch}>
-      <img width={18} height={18} src='/sun.png' alt='Sun' />
+      <Image width={18} height={18} src='/sun.png' alt='Sun' />
       <Toggle
         className={styles.button}
         checked={theme === 'dark'}
@@ -18,7 +19,7 @@ const Switch = () => {
         icons={false}
         aria-label='Toggle dark mode'
       />
-      <img width={18} height={18} src='/moon.png' alt='Moon' />
+      <Image width={18} height={18} src='/moon.png' alt='Moon' />
     </div>
   )
 }
