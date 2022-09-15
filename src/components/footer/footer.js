@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './footer.module.scss'
 
 const Footer = () => (
@@ -6,7 +7,7 @@ const Footer = () => (
       <h4 className={styles.footerLeft}>
         Designed & Developed by Mirian Okradze
         <span className={styles.emoji}>
-          <img src='/rockon.png' alt='Rock On Emoji' width={15} />
+          <Image src='/rockon.png' alt='Rock On Emoji' width={15} height={23} />
         </span>
       </h4>
 
