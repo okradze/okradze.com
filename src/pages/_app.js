@@ -8,7 +8,7 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <ThemeProvider defaultTheme='dark'>
       <Head>
-        <title>Mirian Okradze | A Software Developer</title>
+        <title>Mirian Okradze | A Software Engineer</title>
       </Head>
       <Script
         strategy='afterInteractive'

@@ -6,7 +6,7 @@ const Hero = () => (
     <div className='container'>
       <div className={styles.heroContent}>
         <h1 className={styles.heroHeading}>
-          I'm <span>Mirian Okradze</span>, a software developer, focused on
+          I'm <span>Mirian Okradze</span>, a software engineer, focused on
           building performant web apps
         </h1>
         <a className={styles.button} href='#projects'>

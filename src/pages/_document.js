@@ -6,7 +6,7 @@ const Document = () => {
       <Head>
         <meta
           name='description'
-          content="I'm Mirian Okradze, a software developer, focused on building performant web apps"
+          content="I'm Mirian Okradze, a software engineer, focused on building performant web apps"
         />
         <link
           href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'
