@@ -28,6 +28,14 @@ const Footer = () => (
         >
           GITHUB
         </a>
+        <a
+          rel='noopener noreferrer'
+          href='https://www.linkedin.com/in/mirian-okradze/'
+          target='_blank'
+          className={styles.link}
+        >
+          LINKEDIN
+        </a>
       </div>
     </div>
   </footer>
