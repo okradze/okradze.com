@@ -38,7 +38,7 @@
   align-items: center;
   text-decoration: none;
   background: var(--primary);
-  color: var(--offset);
+  color: var(--white);
   padding: 1rem 1.5rem;
   border-radius: 5px;
   font-weight: bold;
@@ -50,7 +50,7 @@
 }
 
 .icon {
-  fill: var(--text);
+  fill: var(--white);
   width: 20px;
   height: 20px;
 }
